@@ -10,6 +10,7 @@ module "lambda_function" {
   source_path = "../src/lambda-function1"
 
   tags = {
-    Name = "my-lambda1"
+    Name      = "my-lambda1"
+    yor_trace = "4a5dc146-c8dd-4ead-bf53-b8088abb6c74"
   }
 }
