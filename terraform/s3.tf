@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "data" {
   acl           = "public-read"
   force_destroy = true
   
-  
+  acl = "yonivalue"
   tags = {
     Name        = "${local.resource_prefix.value}-data"
     Environment = local.resource_prefix.value
